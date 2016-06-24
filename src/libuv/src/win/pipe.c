@@ -31,6 +31,10 @@
 #include "stream-inl.h"
 #include "req-inl.h"
 
+#if defined(_WIN32)
+#define close _close
+#endif
+
 typedef struct uv__ipc_queue_item_s uv__ipc_queue_item_t;
 
 struct uv__ipc_queue_item_s {

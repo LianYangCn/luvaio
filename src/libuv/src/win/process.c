@@ -33,6 +33,10 @@
 #include "handle-inl.h"
 #include "req-inl.h"
 
+#if defined(_WIN32)
+#define wcsrev _wcsrev
+#endif
+
 
 #define SIGKILL         9
 

@@ -38,6 +38,10 @@
 #include <wincrypt.h>
 
 
+#if defined(_WIN32)
+#define umask _umask
+#endif
+
 #define UV_FS_FREE_PATHS         0x0002
 #define UV_FS_FREE_PTR           0x0008
 #define UV_FS_CLEANEDUP          0x0010

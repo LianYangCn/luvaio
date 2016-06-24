@@ -58,15 +58,19 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\luv.build.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\luv.build.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\luv.build.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\luv.build.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -146,6 +150,112 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\libuv\src\fs-poll.c" />
+    <ClCompile Include="..\src\libuv\src\inet.c" />
+    <ClCompile Include="..\src\libuv\src\threadpool.c" />
+    <ClCompile Include="..\src\libuv\src\uv-common.c" />
+    <ClCompile Include="..\src\libuv\src\version.c" />
+    <ClCompile Include="..\src\libuv\src\win\async.c" />
+    <ClCompile Include="..\src\libuv\src\win\core.c" />
+    <ClCompile Include="..\src\libuv\src\win\dl.c" />
+    <ClCompile Include="..\src\libuv\src\win\error.c" />
+    <ClCompile Include="..\src\libuv\src\win\fs-event.c" />
+    <ClCompile Include="..\src\libuv\src\win\fs.c" />
+    <ClCompile Include="..\src\libuv\src\win\getaddrinfo.c" />
+    <ClCompile Include="..\src\libuv\src\win\getnameinfo.c" />
+    <ClCompile Include="..\src\libuv\src\win\handle.c" />
+    <ClCompile Include="..\src\libuv\src\win\loop-watcher.c" />
+    <ClCompile Include="..\src\libuv\src\win\pipe.c" />
+    <ClCompile Include="..\src\libuv\src\win\poll.c" />
+    <ClCompile Include="..\src\libuv\src\win\process-stdio.c" />
+    <ClCompile Include="..\src\libuv\src\win\process.c" />
+    <ClCompile Include="..\src\libuv\src\win\req.c" />
+    <ClCompile Include="..\src\libuv\src\win\signal.c" />
+    <ClCompile Include="..\src\libuv\src\win\snprintf.c" />
+    <ClCompile Include="..\src\libuv\src\win\stream.c" />
+    <ClCompile Include="..\src\libuv\src\win\tcp.c" />
+    <ClCompile Include="..\src\libuv\src\win\thread.c" />
+    <ClCompile Include="..\src\libuv\src\win\timer.c" />
+    <ClCompile Include="..\src\libuv\src\win\tty.c" />
+    <ClCompile Include="..\src\libuv\src\win\udp.c" />
+    <ClCompile Include="..\src\libuv\src\win\util.c" />
+    <ClCompile Include="..\src\libuv\src\win\winapi.c" />
+    <ClCompile Include="..\src\libuv\src\win\winsock.c" />
+    <ClCompile Include="..\src\lua\src\lapi.c" />
+    <ClCompile Include="..\src\lua\src\lauxlib.c" />
+    <ClCompile Include="..\src\lua\src\lbaselib.c" />
+    <ClCompile Include="..\src\lua\src\lbitlib.c" />
+    <ClCompile Include="..\src\lua\src\lcode.c" />
+    <ClCompile Include="..\src\lua\src\lcorolib.c" />
+    <ClCompile Include="..\src\lua\src\lctype.c" />
+    <ClCompile Include="..\src\lua\src\ldblib.c" />
+    <ClCompile Include="..\src\lua\src\ldebug.c" />
+    <ClCompile Include="..\src\lua\src\ldo.c" />
+    <ClCompile Include="..\src\lua\src\ldump.c" />
+    <ClCompile Include="..\src\lua\src\lfunc.c" />
+    <ClCompile Include="..\src\lua\src\lgc.c" />
+    <ClCompile Include="..\src\lua\src\linit.c" />
+    <ClCompile Include="..\src\lua\src\liolib.c" />
+    <ClCompile Include="..\src\lua\src\llex.c" />
+    <ClCompile Include="..\src\lua\src\lmathlib.c" />
+    <ClCompile Include="..\src\lua\src\lmem.c" />
+    <ClCompile Include="..\src\lua\src\loadlib.c" />
+    <ClCompile Include="..\src\lua\src\lobject.c" />
+    <ClCompile Include="..\src\lua\src\lopcodes.c" />
+    <ClCompile Include="..\src\lua\src\loslib.c" />
+    <ClCompile Include="..\src\lua\src\lparser.c" />
+    <ClCompile Include="..\src\lua\src\lstate.c" />
+    <ClCompile Include="..\src\lua\src\lstring.c" />
+    <ClCompile Include="..\src\lua\src\lstrlib.c" />
+    <ClCompile Include="..\src\lua\src\ltable.c" />
+    <ClCompile Include="..\src\lua\src\ltablib.c" />
+    <ClCompile Include="..\src\lua\src\ltm.c" />
+    <ClCompile Include="..\src\lua\src\lundump.c" />
+    <ClCompile Include="..\src\lua\src\lutf8lib.c" />
+    <ClCompile Include="..\src\lua\src\lvm.c" />
+    <ClCompile Include="..\src\lua\src\lzio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\libuv\include\uv-threadpool.h" />
+    <ClInclude Include="..\src\libuv\include\uv-version.h" />
+    <ClInclude Include="..\src\libuv\include\uv-win.h" />
+    <ClInclude Include="..\src\libuv\include\uv.h" />
+    <ClInclude Include="..\src\libuv\src\heap-inl.h" />
+    <ClInclude Include="..\src\libuv\src\queue.h" />
+    <ClInclude Include="..\src\libuv\src\uv-common.h" />
+    <ClInclude Include="..\src\libuv\src\win\atomicops-inl.h" />
+    <ClInclude Include="..\src\libuv\src\win\handle-inl.h" />
+    <ClInclude Include="..\src\libuv\src\win\internal.h" />
+    <ClInclude Include="..\src\libuv\src\win\req-inl.h" />
+    <ClInclude Include="..\src\libuv\src\win\stream-inl.h" />
+    <ClInclude Include="..\src\libuv\src\win\winapi.h" />
+    <ClInclude Include="..\src\libuv\src\win\winsock.h" />
+    <ClInclude Include="..\src\lua\src\lapi.h" />
+    <ClInclude Include="..\src\lua\src\lauxlib.h" />
+    <ClInclude Include="..\src\lua\src\lcode.h" />
+    <ClInclude Include="..\src\lua\src\lctype.h" />
+    <ClInclude Include="..\src\lua\src\ldebug.h" />
+    <ClInclude Include="..\src\lua\src\ldo.h" />
+    <ClInclude Include="..\src\lua\src\lfunc.h" />
+    <ClInclude Include="..\src\lua\src\lgc.h" />
+    <ClInclude Include="..\src\lua\src\llex.h" />
+    <ClInclude Include="..\src\lua\src\llimits.h" />
+    <ClInclude Include="..\src\lua\src\lmem.h" />
+    <ClInclude Include="..\src\lua\src\lobject.h" />
+    <ClInclude Include="..\src\lua\src\lopcodes.h" />
+    <ClInclude Include="..\src\lua\src\lparser.h" />
+    <ClInclude Include="..\src\lua\src\lprefix.h" />
+    <ClInclude Include="..\src\lua\src\lstate.h" />
+    <ClInclude Include="..\src\lua\src\lstring.h" />
+    <ClInclude Include="..\src\lua\src\ltable.h" />
+    <ClInclude Include="..\src\lua\src\ltm.h" />
+    <ClInclude Include="..\src\lua\src\lua.h" />
+    <ClInclude Include="..\src\lua\src\lua.hpp" />
+    <ClInclude Include="..\src\lua\src\luaconf.h" />
+    <ClInclude Include="..\src\lua\src\lualib.h" />
+    <ClInclude Include="..\src\lua\src\lundump.h" />
+    <ClInclude Include="..\src\lua\src\lvm.h" />
+    <ClInclude Include="..\src\lua\src\lzio.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

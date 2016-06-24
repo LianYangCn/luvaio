@@ -29,6 +29,9 @@
 #include "handle-inl.h"
 #include "req-inl.h"
 
+#if defined(_WIN32)
+#define wcsdup _wcsdup
+#endif
 
 const unsigned int uv_directory_watcher_buffer_size = 4096;
 
