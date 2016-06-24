@@ -214,6 +214,7 @@
     <ClCompile Include="..\src\lua\src\lutf8lib.c" />
     <ClCompile Include="..\src\lua\src\lvm.c" />
     <ClCompile Include="..\src\lua\src\lzio.c" />
+    <ClCompile Include="..\src\luv\src\luv.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\libuv\include\uv-threadpool.h" />
@@ -256,6 +257,11 @@
     <ClInclude Include="..\src\lua\src\lundump.h" />
     <ClInclude Include="..\src\lua\src\lvm.h" />
     <ClInclude Include="..\src\lua\src\lzio.h" />
+    <ClInclude Include="..\src\luv\src\lhandle.h" />
+    <ClInclude Include="..\src\luv\src\lreq.h" />
+    <ClInclude Include="..\src\luv\src\lthreadpool.h" />
+    <ClInclude Include="..\src\luv\src\luv.h" />
+    <ClInclude Include="..\src\luv\src\util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

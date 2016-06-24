@@ -207,6 +207,9 @@
     <ClCompile Include="..\src\libuv\src\win\winsock.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\luv\src\luv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\lua\src\lapi.h">
@@ -327,6 +330,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\libuv\include\uv-win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\luv\src\lhandle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\luv\src\lreq.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\luv\src\lthreadpool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\luv\src\luv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\luv\src\util.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
