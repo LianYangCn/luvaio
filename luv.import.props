@@ -10,8 +10,7 @@
     <ClCompile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;LUA_BUILD_AS_DLL;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)src\libuv\include;$(SolutionDir)src\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <UndefinePreprocessorDefinitions>
-      </UndefinePreprocessorDefinitions>
+      <RuntimeLibrary Condition="'$(ConfigurationName)'=='Release'">MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalDependencies>luv.lib;%(AdditionalDependencies)</AdditionalDependencies>
