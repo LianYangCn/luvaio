@@ -34,6 +34,7 @@
 #include "lualib.h"
 #include "lauxlib.h"
 
+LUALIB_API int luaopen_luv(lua_State *L);
 
 /*
 ** these libs are loaded by lua.c and are readily available to any Lua
@@ -53,6 +54,7 @@ static const luaL_Reg loadedlibs[] = {
 #if defined(LUA_COMPAT_BITLIB)
   {LUA_BITLIBNAME, luaopen_bit32},
 #endif
+  {"luv", luaopen_luv},
   {NULL, NULL}
 };
 

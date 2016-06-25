@@ -408,7 +408,7 @@ static int luv_fs_scandir_next(lua_State* L) {
   uv_fs_t* req = luv_check_fs(L, 1);
   uv_dirent_t ent;
   int ret = uv_fs_scandir_next(req, &ent);
-  const char* type;
+  const char* type = NULL;
   if (ret == UV_EOF) {
     luv_cleanup_req(L, req->data);
     req->data = NULL;

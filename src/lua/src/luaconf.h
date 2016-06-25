@@ -115,6 +115,9 @@
 #define LUA_FLOAT_DOUBLE	2
 #define LUA_FLOAT_LONGDOUBLE	3
 
+#define LUA_INT_TYPE    LUA_INT_LONGLONG
+#define LUA_FLOAT_TYPE  LUA_FLOAT_DOUBLE
+
 #if defined(LUA_32BITS)		/* { */
 /*
 ** 32-bit integers and 'float'
@@ -245,7 +248,7 @@
 
 
 /* more often than not the libs go together with the core */
-#define LUALIB_API	
+#define LUALIB_API	LUA_API
 #define LUAMOD_API	LUALIB_API
 
 

@@ -18,6 +18,7 @@
 #include "luv.h"
 #ifdef _WIN32
 #include <process.h>
+#define getpid _getpid
 #endif
 
 static int luv_guess_handle(lua_State* L) {

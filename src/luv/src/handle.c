@@ -140,7 +140,7 @@ static int luv_send_buffer_size(lua_State* L) {
     value = 0;
   }
   else {
-    value = luaL_checkinteger(L, 2);
+    value = (int)luaL_checkinteger(L, 2);
   }
   ret = uv_send_buffer_size(handle, &value);
   if (ret < 0) return luv_error(L, ret);

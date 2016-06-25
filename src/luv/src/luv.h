@@ -16,6 +16,8 @@
  */
 #ifndef LUV_H
 #define LUV_H
+#define LUA_LIB
+
 #include <lua.h>
 #include <lualib.h>
 #include <lauxlib.h>
